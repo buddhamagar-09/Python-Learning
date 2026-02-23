@@ -13,9 +13,34 @@
 # is_student = True # Boolean
 
 # using prompt to get user input
-name = input("Enter your Name:")
-age = int(input("Enter your age:"))
+# Budha
 
-print(f"Hello !! {name}")
-print("Happy Birthday..")
-print(f"You are {age} years old now.")
+
+# 
+name = input("Enter your name: ")
+
+# result = len(name)
+
+# find is used to find the index of the letter
+# result = name.find("u")
+# result = name.rfind("d")
+
+# capitalize is used to Make the first letter To Upper case
+# result = name.capitalize() 
+
+# result = name.upper()
+# result = name.lower()
+
+# isdigit returns true if the sting is only digit otherwise false
+# result = name.isdigit() 
+
+# isalpha returns true if the string is alphabetic otherwise false
+# result = name.isalpha()
+
+# count
+# result = name.count("d")
+
+# replace
+result = name.replace("d"," ")
+
+print(result)
