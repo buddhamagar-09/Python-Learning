@@ -44,8 +44,26 @@ import time
 #         print(x)
 
 # iterate in strings
-name = input("Enter your Nmae: ")
-for x in name:
-    print(x)
+# name = input("Enter your Nmae: ")
+# for x in name:
+#     print(x)
 
 
+    # nested looping loop inside another loop
+rows = int(input("Enter the Rows: "))
+columns = int(input("Enter the Columns: "))
+symbol = input("Enter the Symbol you want ($,#,@,^,*,&,!): ")
+
+for x in range(rows):
+    for y in range(columns):
+        print(symbol,end=" ")
+    print()
+
+
+
+# create a triangle pattern
+# rows = int(input("Enter the number of rows: "))
+for x in range(1,6):
+    for y in range(x):
+        print("*",end=" ")
+    print()
