@@ -51,13 +51,33 @@ fruits = ["orange","mango","watermelon"]
 # print(greoceries[0])
 
 # or
-groceries = [["potato","onion","beans"],
-              ["orange","mango","watermelon"]]
+# groceries = [["potato","onion","beans"],
+#               ["orange","mango","watermelon"]]
 
-for collection in groceries:
-    for item in collection:
-        print(item, end=" ")
-    print()
+# for collection in groceries:
+#     for item in collection:
+#         print(item, end=" ")
+#     print()
+
+
+# dictionary 
+capitals = {
+    "Nepal" : "kathmandu",
+    "USA" : "Washington",
+    "Japan" : "Tokyo",
+    "China" : "Beijing",
+    "Germany" : "Berlinn"
+}
+
+print(capitals.get("Nepal"))
+# capitals.pop("Germany")
+# capitals.popitem()
+capitals.update({"Germany": "KTM"})
+print(capitals)
+# print("-------------------")
+# for key , value in capitals.items():
+#     print(f"{key} : {value}")
+
 
 
 
