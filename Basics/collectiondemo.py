@@ -5,7 +5,7 @@
 #dictionary =  a collection which is ordered and changeable. No duplicate members.
 
 # list example
-animals = ["cat","baboon","elephant","dog"]
+# animals = ["cat","baboon","elephant","dog"]
 
 # animals.reverse()
 # animals.append("fox")
@@ -31,15 +31,33 @@ animals = ["cat","baboon","elephant","dog"]
 
 
 # tuple example 
-fruits = ("apple","banana","grapes","coconut")
+# fruits = ("apple","banana","grapes","coconut")
 # print(fruits)
 # print("apple" in fruits)
-print(fruits.index("apple"))
-print(fruits.count("apple"))
+# print(fruits.index("apple"))
+# print(fruits.count("apple"))
 
-for fruit in fruits:
-    print(fruit)
+# for fruit in fruits:
+#     print(fruit)
 
+
+
+# 2d collection example
+
+vegetables = ["potato","onion","beans"]
+fruits = ["orange","mango","watermelon"]
+
+# greoceries = [vegetables,fruits]
+# print(greoceries[0])
+
+# or
+groceries = [["potato","onion","beans"],
+              ["orange","mango","watermelon"]]
+
+for collection in groceries:
+    for item in collection:
+        print(item, end=" ")
+    print()
 
 
 
