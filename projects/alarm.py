@@ -41,16 +41,21 @@ def alarm(seconds):
         print(f"\rAlarm will sound in: {minutes_left:02d}:{seconds_left:02d}", end="", flush=True)
     print()
 
-minutes = int(input("How many Minutes to wait: "))
-seconds = int(input("How many seconds to wait: "))
-total_seconds = minutes*60 + seconds
 
-alarm(total_seconds)
+def main():
+    minutes = int(input("How many Minutes to wait: "))
+    seconds = int(input("How many seconds to wait: "))
+    total_seconds = minutes*60 + seconds
 
-if not sound_path.exists():
-    print(f"Sound file not found: {sound_path}")
-else:
-    pygame.mixer.music.load(str(sound_path))
-    pygame.mixer.music.play()
-    while pygame.mixer.music.get_busy():
-        t.sleep(0.1)
+    alarm(total_seconds)
+
+    if not sound_path.exists():
+        print(f"Sound file not found: {sound_path}")
+    else:
+        pygame.mixer.music.load(str(sound_path))
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            t.sleep(0.1)
+
+if __name__ == '__main__':
+    main()
