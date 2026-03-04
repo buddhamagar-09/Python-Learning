@@ -1,25 +1,3 @@
-"""
-Alarm application that waits for a specified duration and then plays a sound alert.
-This module uses pygame to play an MP3 sound file after a user-defined delay.
-It displays a countdown timer in the format MM:SS showing the remaining time
-until the alarm sounds.
-Functions:
-    alarm(seconds): Waits for the specified number of seconds and displays
-                     a countdown timer. Note: Function name has a typo
-                     (should be 'alarm').
-Usage:
-    1. User inputs the number of minutes to wait
-    2. User inputs the number of seconds to wait
-    3. Countdown timer is displayed
-    4. After countdown completes, an MP3 sound file (fire_alarm.mp3)
-       is played from the project directory
-    5. Program waits until the sound finishes playing
-Requirements:
-    - pygame library for audio playback
-    - fire_alarm.mp3 file in the same directory as this script
-Note:
-    - Sound file path is relative to the script's location
-"""
 import pygame
 import time as t
 from pathlib import Path
