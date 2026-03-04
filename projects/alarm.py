@@ -30,7 +30,6 @@ sound_path = Path(__file__).resolve().parent / "fire_alarm.mp3"
 
 def alarm(seconds):
     time_elapsed = 0
-    print("Alarm will sound in: ", end="", flush=True)
     while time_elapsed < seconds :
         t.sleep(1)
         time_elapsed += 1
