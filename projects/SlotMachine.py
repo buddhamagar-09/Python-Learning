@@ -26,7 +26,6 @@ def payout(row,bet):
             return bet * 3
         elif row[0] == "☀️":
             return bet * 3
-        
     return 0
 
 def main():
@@ -73,6 +72,7 @@ def main():
     print("******************************")
     print(f"Your Current Balance is ${balance}")
     print("Thank You For playing this game:😊")
+
 
 if __name__ == "__main__":
     main()
