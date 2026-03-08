@@ -1,6 +1,4 @@
 
-
-
 class shapes:
     def __init__(self, color, is_filled):
         self.color = color
