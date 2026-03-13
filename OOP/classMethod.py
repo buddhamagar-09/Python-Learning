@@ -26,13 +26,18 @@
 
 # another example
 
+from itertools import count
+
+
 class Student:
     count = 0
+    total_marks = 0
 
     def __init__(self,name,marks):
         self.name = name
         self.marks = marks
         Student.count += 1
+        Student.total_marks += marks
     
     def get_info(self):
         return f"Name: {self.name}\n Marks: {self.marks}"
@@ -40,6 +45,12 @@ class Student:
     @classmethod
     def get_count(cls):
         return f"Total students: {cls.count}"
+    @classmethod
+    def get_avg_marks(cls):
+        if cls.count == 0 :
+            return 0
+        else:
+            return f"Average Marks: {cls.total_marks / cls.count}"
 
 s1 = Student("Buddha", 99)
 s2 = Student("Pawan", 88)
@@ -49,3 +60,4 @@ print(s2.get_info())
 print(s3.get_info())
 
 print(Student.get_count())
+print(Student.get_avg_marks())
